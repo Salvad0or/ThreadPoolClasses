@@ -43,7 +43,7 @@ namespace ConsoleApp6
             Task task5 = Task.Run(() => Console.WriteLine("Method1"));
 
             task5.ContinueWith((Task k) => Console.WriteLine("Method2"))
-                .ContinueWith((Task k) => Console.WriteLine("Method3"));
+                 .ContinueWith((Task k) => Console.WriteLine("Method3"));
 
             // Здесь можно использовать и возвращяемые значения, опишу ниже :
 
@@ -56,11 +56,9 @@ namespace ConsoleApp6
 
             task6.ContinueWith((Task<int> k) => task6.Result + 1)
                  .ContinueWith((Task<int> k) => k.Result + 1)
-                 .ContinueWith((Task<int> k) => Console.WriteLine(k.Result));
-
+                 .ContinueWith((Task<int> k) => res = k.Result)
+                 .ContinueWith((Task<int> k) => Console.WriteLine($"Результат всех продолжений равен : {k.Result}"));
         }
-
-
 
         static int Calc(int a, int b)
         {
