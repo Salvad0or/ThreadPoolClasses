@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadPoolWorkers", "ConsoleApp1\ThreadPoolWorkers.csproj", "{F5C19CE1-6118-4D62-8161-95472E9F8114}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadPoolWorkers", "ConsoleApp1\ThreadPoolWorkers.csproj", "{F5C19CE1-6118-4D62-8161-95472E9F8114}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_TPL", "ConsoleApp2\001_TPL.csproj", "{54C0A04D-8957-4BF7-AD3B-7BFEA8AE3EC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "001_TPL", "ConsoleApp2\001_TPL.csproj", "{54C0A04D-8957-4BF7-AD3B-7BFEA8AE3EC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002_TPL_ReturnValue", "002_TPL_ReturnValue\002_TPL_ReturnValue.csproj", "{BDEE3713-23A7-4C2F-A56D-09D64D2DC1B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "002_TPL_ReturnValue", "002_TPL_ReturnValue\002_TPL_ReturnValue.csproj", "{BDEE3713-23A7-4C2F-A56D-09D64D2DC1B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "003_TPL_WaitMethods", "ConsoleApp3\003_TPL_WaitMethods.csproj", "{3BAD2660-E7B5-4272-9ECE-A6D5DF7EEA66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "003_TPL_WaitMethods", "ConsoleApp3\003_TPL_WaitMethods.csproj", "{3BAD2660-E7B5-4272-9ECE-A6D5DF7EEA66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "004_TPL_FewOverloads", "ConsoleApp5\004_TPL_FewOverloads.csproj", "{E523BD76-94A4-4D48-A594-8636214CCE7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "004_TPL_FewOverloads", "ConsoleApp5\004_TPL_FewOverloads.csproj", "{E523BD76-94A4-4D48-A594-8636214CCE7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "005_TPL_Continue", "ConsoleApp6\005_TPL_Continue.csproj", "{4BE6F8BB-F0D7-467A-9CEB-358428DB6EAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "005_TPL_Continue", "ConsoleApp6\005_TPL_Continue.csproj", "{4BE6F8BB-F0D7-467A-9CEB-358428DB6EAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "006_TPL_TaskFactory", "006_TPL_TaskFactory\006_TPL_TaskFactory.csproj", "{ADF754A1-3CF8-4FF3-B89C-AE16C6875682}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "007_ValueTask", "007_ValueTask\007_ValueTask.csproj", "{79676602-73C7-4942-B131-E85E29DF80F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{4BE6F8BB-F0D7-467A-9CEB-358428DB6EAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BE6F8BB-F0D7-467A-9CEB-358428DB6EAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BE6F8BB-F0D7-467A-9CEB-358428DB6EAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADF754A1-3CF8-4FF3-B89C-AE16C6875682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADF754A1-3CF8-4FF3-B89C-AE16C6875682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADF754A1-3CF8-4FF3-B89C-AE16C6875682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADF754A1-3CF8-4FF3-B89C-AE16C6875682}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79676602-73C7-4942-B131-E85E29DF80F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79676602-73C7-4942-B131-E85E29DF80F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79676602-73C7-4942-B131-E85E29DF80F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79676602-73C7-4942-B131-E85E29DF80F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

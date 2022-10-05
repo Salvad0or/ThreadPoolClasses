@@ -9,18 +9,18 @@ namespace ConsoleApp6
         static void Main(string[] args)
         {
             #region Это база
-            //Task task = new Task(() =>
-            //{
-            //    Console.WriteLine("Метод выполняется, погоди 3 сек");
-            //    Thread.Sleep(3000);
+            Task task = new Task(() =>
+            {
+                Console.WriteLine("Метод выполняется, погоди 3 сек");
+                Thread.Sleep(3000);
 
-            //});
+            });
 
-            //Task continuetion = task.ContinueWith(o => Console.WriteLine("А вот и продолжение")); // Метод запустится автоматически после завершения
-            //                                                                                      // работы task
-            //task.Start();
+            Task continuetion = task.ContinueWith(o => Console.WriteLine("А вот и продолжение")); // Метод запустится автоматически после завершения
+                                                                                                  // работы task
+            task.Start();
 
-            //Console.ReadKey();
+            Console.ReadKey();
 
             #endregion
 
